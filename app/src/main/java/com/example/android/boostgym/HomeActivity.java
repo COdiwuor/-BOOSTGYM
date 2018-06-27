@@ -42,8 +42,6 @@ public class HomeActivity extends AppCompatActivity {
         if(language ==null)
             Paper.book().write("language","en");
 
-        updateView((String)Paper.book().read("language"));
-
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -86,7 +84,8 @@ public class HomeActivity extends AppCompatActivity {
     private void updateView(String lang) {
         Context context = LocaleHelper.setLocale(this,lang);
         Resources resources = context.getResources();
-        textView.setText(resources.getString(R.string.user_profile));
+        finish();
+        startActivity(new Intent(HomeActivity.this,HomeActivity.class));
 
 
     }
