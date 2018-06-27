@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/dumble">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/txtfirstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name"
+        android:padding="10sp"
+        android:background="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="60px"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/lastnameregistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="60px"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textAlignment="center"
+        android:padding="10sp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="60px"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="60px"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/re_type_password"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="60px"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="60px"
+        android:inputType="phone"/>
+    <Button
+        android:id="@+id/btnCreateaccountLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wiseman"
+        android:text="@string/create_account"
+        android:textColor="@android:color/black"
+        android:layout_marginHorizontal="60px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_dont_have_an_account"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+    <Button
+        android:id="@+id/btnLoginAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/black"
+        android:layout_marginHorizontal="60px" />
+
+</LinearLayout>

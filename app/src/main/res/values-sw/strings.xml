@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Boost Gym</string>
+    <string name="user_profile"> Maelezo Ya Mtumiaji</string>
+    <string name="past_workout">Workout ya Zamani</string>
+    <string name="gym_location">Eneo La Mazoezi</string>
+    <string name="work_out_sessions">Kazi ya Kiao</string>
+    <string name="gym_instructors">Wauzaji wa mazoezi</string>
+    <string name="title_activity_maps">Ramani</string>
+    <string name="enter_username">Ingiza Jina La Mtumiaji</string>
+    <string name="password">Nenosiri</string>
+    <string name="log_in">Ingia</string>
+    <string name="you_dont_have_an_account">Huna Akaunti</string>
+    <string name="first_name">Jina La Kwanza </string>
+    <string name="last_name">Jina La Mwisho</string>
+    <string name="email">Barua Pepe</string>
+    <string name="re_type_password">Rudia Nywila</string>
+    <string name="phone_number">Nambari ya Simu</string>
+    <string name="create_account">Tengeneza Akaunti</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="preferred_workout_location">Preferred workout location</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="weight">Weight</string>
+    <string name="target_weight">Target weight</string>
+</resources>
