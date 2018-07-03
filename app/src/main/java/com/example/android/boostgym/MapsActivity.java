@@ -46,5 +46,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         LatLng mada = new LatLng(-1, 36);
         mMap.addMarker(new MarkerOptions().position(mada).title("Marker in Madaraka"));
+
+        LatLng SouthB = new LatLng(-1.3, 36);
+        mMap.addMarker(new MarkerOptions().position(SouthB).title("Marker in SouthB"));
     }
 }

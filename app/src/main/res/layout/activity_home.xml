@@ -17,14 +17,15 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="2">
+
         <Button
             android:id="@+id/button1"
             android:layout_width="0dp"
             android:layout_height="90dp"
             android:layout_weight="1"
-            android:text="@string/user_profile"
             android:backgroundTint="@color/wiseman"
-            android:drawableLeft="@drawable/ic_person_black_24dp"/>
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:text="@string/user_profile" />
         <Button
             android:id="@+id/button2"
             android:layout_width="0dp"
@@ -50,19 +51,18 @@
             android:layout_width="0dp"
             android:layout_height="90dp"
             android:layout_weight="1"
-            android:text="@string/gym_location"
             android:backgroundTint="@color/wiseman"
             android:drawableLeft="@drawable/ic_add_location_black_24dp"
-            />
+            android:text="@string/gym_location" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="0dp"
             android:layout_height="90dp"
             android:layout_weight="1"
-            android:text="@string/gym_instructors"
+            android:backgroundTint="@color/wiseman"
             android:drawableLeft="@drawable/gym_instructor"
-            android:backgroundTint="@color/wiseman"/>
+            android:text="@string/gym_instructors" />
 
 
     </LinearLayout>
@@ -82,6 +82,15 @@
             android:backgroundTint="@color/wiseman"
             android:drawableLeft="@drawable/workout_session"
             android:text="@string/work_out_sessions" />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/wiseman"
+            android:drawableLeft="@drawable/logout"
+            android:text="@string/log_out" />
         <TextView
             android:id="@+id/text_view"
             android:visibility="gone"

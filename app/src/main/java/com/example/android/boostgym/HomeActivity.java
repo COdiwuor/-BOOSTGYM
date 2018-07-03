@@ -17,7 +17,7 @@ import com.example.android.boostgym.Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class HomeActivity extends AppCompatActivity {
-      Button btn1, btn2, btn3, btn4, btn5;
+      Button btn1, btn2, btn3, btn4, btn5, btnlogout;
     TextView textView;
 
     @Override
@@ -34,6 +34,7 @@ public class HomeActivity extends AppCompatActivity {
         btn3 = (Button)findViewById(R.id.button3);
         btn4= (Button)findViewById(R.id.button4);
         btn5 =  (Button)findViewById(R.id.button5);
+        btnlogout =(Button)findViewById(R.id.btnlogout);
         textView = (TextView) findViewById(R.id.text_view);
 
         Paper.init(this);
@@ -76,6 +77,12 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,WorkoutsessionActivity.class));
+            }
+        });
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this ,MainApplication.class));
             }
         });
 

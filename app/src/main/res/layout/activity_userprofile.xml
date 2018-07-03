@@ -35,26 +35,18 @@
 
 
     <EditText
-        android:id="@+id/firstnameprofile"
-        android:layout_width="214dp"
+        android:id="@+id/txtname"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:hint="@string/firstname"
+        android:hint="@string/username"
         android:background="@android:color/white"
         android:padding="10sp"
         android:layout_marginBottom="5dp"/>
 
-    <EditText
-        android:id="@+id/lastnameprofile"
-        android:layout_width="216dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/lastname"
-        android:background="@android:color/white"
-        android:padding="10sp"
-        android:layout_marginBottom="5dp"/>
 
     <EditText
         android:id="@+id/preferredworkout"
-        android:layout_width="216dp"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:hint="@string/preferred_workout_location"
         android:background="@android:color/white"
@@ -63,7 +55,7 @@
 
     <EditText
         android:id="@+id/age"
-        android:layout_width="216dp"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:hint="@string/age"
         android:background="@android:color/white"
@@ -72,7 +64,7 @@
 
     <EditText
         android:id="@+id/gender"
-        android:layout_width="216dp"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:hint="@string/gender"
         android:background="@android:color/white"
@@ -81,7 +73,7 @@
 
     <EditText
         android:id="@+id/weight"
-        android:layout_width="216dp"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:hint="@string/weight"
         android:background="@android:color/white"
@@ -89,7 +81,7 @@
         android:layout_marginBottom="5dp"/>
     <EditText
         android:id="@+id/targetweight"
-        android:layout_width="216dp"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:hint="@string/target_weight"
         android:background="@android:color/white"
@@ -100,15 +92,16 @@
         android:layout_height="match_parent">
 
         <Button
-            android:layout_width="107dp"
+            android:layout_width="145dp"
             android:layout_height="wrap_content"
-            android:hint="edit"
-            android:backgroundTint="@color/wiseman"/>
+            android:backgroundTint="@color/wiseman"
+            android:hint="@string/edit" />
+
         <Button
-            android:layout_width="110dp"
+            android:layout_width="145dp"
             android:layout_height="wrap_content"
-            android:hint="save"
-            android:backgroundTint="@color/colorIndigo"/>
+            android:backgroundTint="@color/colorIndigo"
+            android:hint="@string/save" />
 
     </LinearLayout>
 

@@ -17,19 +17,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme2" />
         <activity android:name=".UserprofileActivity" />
         <activity android:name=".PastworkoutActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -46,7 +47,8 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".GyminstructorActivity" />
-        <activity android:name=".WorkoutsessionActivity"></activity>
+        <activity android:name=".WorkoutsessionActivity" />
+        <activity android:name=".AccountCreationActivity"></activity>
     </application>
 
 </manifest>
