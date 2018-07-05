@@ -1,16 +1,27 @@
 package com.example.android.boostgym;
 
+import android.location.Location;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.Log;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+
+    private static final String TAG = MapsActivity.class.getSimpleName();
+
+    public static CameraUpdate newLatLangZoom(LatLng latLng, float zoom) {
+        return null;
+    }
 
     private GoogleMap mMap;
 
@@ -18,10 +29,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+        
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+
     }
 
 
@@ -44,10 +59,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        LatLng mada = new LatLng(-1, 36);
-        mMap.addMarker(new MarkerOptions().position(mada).title("Marker in Madaraka"));
+        LatLng mada = new LatLng(-1.309859, 36.815607);
+        mMap.addMarker(new MarkerOptions().position(mada).title("BoostGym in Madaraka"));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mada,18),5000,null);
 
-        LatLng SouthB = new LatLng(-1.3, 36);
-        mMap.addMarker(new MarkerOptions().position(SouthB).title("Marker in SouthB"));
+
+        LatLng SouthB = new LatLng(-1.310341, 36.833737);
+        mMap.addMarker(new MarkerOptions().position(SouthB).title("BoostGym in SouthB"));
+
+
     }
+
 }

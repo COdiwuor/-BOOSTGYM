@@ -29,6 +29,8 @@
     <string name="edit">edit</string>
     <string name="username">Username</string>
     <string name="log_out">Log out</string>
+    <string name="save">save</string>
+    <string name="preferred_workout_place">Preferred Workout Place</string>
 
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.android.boostgym;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -72,8 +73,7 @@ public class AccountCreationActivity extends AppCompatActivity {
         date_of_birth= findViewById(R.id.DateofBirth);
         Preferred_workout =findViewById(R.id.Prefferedworkout);
 
-        ProgressBarreading = findViewById(R.id.ProgressBar);
-
+        ProgressBarreading = findViewById(R.id.RegisterProgressBar);
 
 
         btncreateAccount = findViewById(R.id.save);
@@ -122,6 +122,7 @@ public class AccountCreationActivity extends AppCompatActivity {
         }else if(preffered_workout.isEmpty()){
             Preferred_workout.setError("Preffered workout is required");
         }else{
+            ProgressBarreading.setVisibility(View.VISIBLE);
                   registerUser();
         }
 
@@ -147,10 +148,10 @@ public class AccountCreationActivity extends AppCompatActivity {
         final String password = txtpassword;
         final String phonenumber = txtphonenumber;
         final String gender = Gender;
-        final String Height = "height";
-        final String Weight = "weight";
-        final String Date_of_birth= "date_of_birth";
-        final String Preferred_workout = "preferred_workout";
+        final String fetch_height = Height.getText().toString();
+        final String fetch_weight = Weight.getText().toString();
+        final String fetch_date_of_birth= date_of_birth. getText().toString();
+        final String fetch_preferred_workout =Preferred_workout.getText().toString();
 
 
 
@@ -158,7 +159,9 @@ public class AccountCreationActivity extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(AccountCreationActivity.this, response, Toast.LENGTH_LONG).show();
+                        ProgressBarreading.setVisibility(View.GONE);
+                        Toast.makeText(AccountCreationActivity.this, "Registered successfully", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(AccountCreationActivity.this,HomeActivity.class));
 
                     }
                 },
@@ -166,7 +169,8 @@ public class AccountCreationActivity extends AppCompatActivity {
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(AccountCreationActivity.this,error.toString(),Toast.LENGTH_LONG).show();
+                        ProgressBarreading.setVisibility(View.GONE);
+                        Toast.makeText(AccountCreationActivity.this,"Something went wrong",Toast.LENGTH_LONG).show();
                     }
                 }){
             @Override
@@ -177,10 +181,10 @@ public class AccountCreationActivity extends AppCompatActivity {
                 params.put(KEY_PASSWORD,password);
                 params.put(KEY_PHONENUMBER,phonenumber);
                 params.put(KEY_GENDER ,gender);
-                params.put(KEY_HEIGHT , Height);
-                params.put(KEY_WEIGHT,Weight);
-                params.put(KEY_DATE_OF_BIRTH,Date_of_birth);
-                params.put(KEY_PREFERRED_WORKUT,Preferred_workout);
+                params.put(KEY_HEIGHT , fetch_height);
+                params.put(KEY_WEIGHT,fetch_weight);
+                params.put(KEY_DATE_OF_BIRTH,fetch_date_of_birth);
+                params.put(KEY_PREFERRED_WORKUT,fetch_preferred_workout);
 
                 return params;
 

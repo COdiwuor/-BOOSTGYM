@@ -61,26 +61,6 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         Paper.init(this);
-        EditText txtusername,txtemail,txtpassword,txtretypepassword,txtphonenumber;
-
-
-        txtusername = findViewById(R.id.txtname);
-        txtemail = findViewById(R.id.email);
-        txtpassword = findViewById(R.id.txtpassword);
-        txtretypepassword = findViewById(R.id.txtretypepassword);
-        txtphonenumber = findViewById(R.id.phonenumber);
-
-        String name =  txtusername.getText().toString();
-        String email  = txtemail.getText().toString();
-        String passsword = txtpassword.getText().toString();
-        String retypepassword = txtretypepassword.getText().toString();
-        String phonenumber =txtphonenumber.getText().toString();
-
-        Paper.book().write("txtusername",name);
-        Paper.book().write("txtemail",email);
-        Paper.book().write("txtpassword",passsword);
-        Paper.book().write("txtretypepassword",retypepassword)  ;
-        Paper.book().write("txtphonenumber",phonenumber);
 
     }
 
@@ -101,10 +81,21 @@ public class RegisterActivity extends AppCompatActivity {
             txtpassword.setError("Password is required");
         }else if(retypepassword.isEmpty()){
             txtretypepassword.setError("Retype-password");
-        }else if(phonenumber.isEmpty()){
+        }else if(phonenumber.isEmpty()) {
             txtphonenumber.setError("Phone number is required");
-        }else
+        }else if(!retypepassword.equals(password)){
+            txtretypepassword.setError("Passwords must be the same");
+
+        }else{
+            Paper.book().write("txtusername",username);
+            Paper.book().write("txtemail",email);
+            Paper.book().write("txtpassword",password);
+            Paper.book().write("txtphonenumber",phonenumber);
             Continue();
+        }
+
+
+
 
     }
 

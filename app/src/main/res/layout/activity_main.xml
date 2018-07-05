@@ -55,7 +55,7 @@
         android:layout_gravity="center"
         android:text="@string/you_dont_have_an_account"
         android:textAlignment="center"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btnRegisterLogin"
@@ -66,6 +66,12 @@
         android:onClick="Register"
         android:text="@string/create_account"
         android:textColor="@android:color/black" />
+    <ProgressBar
+        android:id="@+id/LoginProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
 
 
 

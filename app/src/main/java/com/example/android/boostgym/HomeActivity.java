@@ -37,6 +37,8 @@ public class HomeActivity extends AppCompatActivity {
         btnlogout =(Button)findViewById(R.id.btnlogout);
         textView = (TextView) findViewById(R.id.text_view);
 
+
+
         Paper.init(this);
 
         String language = Paper.book().read("language");
@@ -82,7 +84,7 @@ public class HomeActivity extends AppCompatActivity {
         btnlogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this ,MainApplication.class));
+                startActivity(new Intent(HomeActivity.this ,MainActivity.class));
             }
         });
 

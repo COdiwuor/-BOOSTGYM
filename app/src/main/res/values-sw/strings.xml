@@ -29,4 +29,6 @@
     <string name="edit">kuangalia</string>
     <string name="username">Majina ya Matumizi</string>
     <string name="log_out">Kutoka</string>
+    <string name="save">kuweka</string>
+    <string name="preferred_workout_place">Preferred Workout Place</string>
 </resources>
