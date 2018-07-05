@@ -24,11 +24,10 @@
     <string name="male">Mannlich</string>
     <string name="height">Hohe</string>
     <string name="date_of_birth">Geburtsdatum</string>
-    <string name="preffered_workout">Bevorzugtes Training</string>
     <string name="edit">bearbeiten</string>
     <string name="username">Nutzername</string>
     <string name="log_out">Ausloggen</string>
     <string name="female">weiblich</string>
     <string name="save">sparen</string>
-    <string name="preferred_workout_place">Preferred Workout Place</string>
+    <string name="preferred_workout_place">Geburtsdatum</string>
 </resources>

@@ -29,7 +29,6 @@
     <string name="save">save</string>
     <string name="username">Username</string>
     <string name="log_out">Log out</string>
-    <string name="appbar_scrolling_view_behaviour">scrolling_app_bar</string>
-    <string name="preffered_workout">preffered Workout</string>
+    <string name="appbar_scrolling_view_behaviour" translatable="false">scrolling_app_bar</string>
     <string name="preferred_workout_place">Preferred Workout Place</string>
 </resources>

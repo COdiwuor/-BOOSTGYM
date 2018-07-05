@@ -17,7 +17,7 @@ import com.example.android.boostgym.Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class HomeActivity extends AppCompatActivity {
-      Button btn1, btn2, btn3, btn4, btn5, btnlogout;
+      Button btnuserprofile, btnpastworkout, btngymlocation, btngyminstructor, btnworkoutsession, btnlogout;
     TextView textView;
 
     @Override
@@ -29,13 +29,13 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        btn1= (Button)findViewById(R.id.button1);
-        btn2 =(Button)findViewById(R.id.button2);
-        btn3 = (Button)findViewById(R.id.button3);
-        btn4= (Button)findViewById(R.id.button4);
-        btn5 =  (Button)findViewById(R.id.button5);
-        btnlogout =(Button)findViewById(R.id.btnlogout);
-        textView = (TextView) findViewById(R.id.text_view);
+        btnuserprofile= findViewById(R.id.buttonuserprofile);
+        btnpastworkout =findViewById(R.id.buttonpastworkout);
+        btngymlocation = findViewById(R.id.buttongymlocation);
+        btngyminstructor= findViewById(R.id.buttongyminstructors);
+        btnworkoutsession =  findViewById(R.id.buttonworkoutsession);
+        btnlogout =findViewById(R.id.btnlogout);
+        textView = findViewById(R.id.text_view);
 
 
 
@@ -47,27 +47,27 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btnuserprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,UserprofileActivity.class));
 
             }
         });
-        btn2.setOnClickListener(new View.OnClickListener() {
+        btnpastworkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,PastworkoutActivity.class));
 
             }
         });
-        btn3.setOnClickListener(new View.OnClickListener() {
+        btngymlocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,MapsActivity.class));
             }
         });
-        btn4.setOnClickListener(new View.OnClickListener() {
+        btngyminstructor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,GyminstructorActivity.class));
@@ -75,7 +75,7 @@ public class HomeActivity extends AppCompatActivity {
             }
 
         });
-        btn5.setOnClickListener(new View.OnClickListener() {
+        btnworkoutsession.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,WorkoutsessionActivity.class));

@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         ProgressBarLogin.setVisibility(View.GONE);
-                        Toast.makeText(MainActivity.this, "Something Went Wrong", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Something Went Wrong ", Toast.LENGTH_LONG).show();
                     }
 
                 }) {
