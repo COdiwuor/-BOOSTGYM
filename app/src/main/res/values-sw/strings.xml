@@ -18,12 +18,12 @@
     <string name="preferred_workout_location">Pahali pa kufanyia kazi</string>
     <string name="age">Miaka</string>
     <string name="gender">Jinsia</string>
-    <string name="weight">Uzito</string>
+    <string name="weight">Uzito katika kilo</string>
     <string name="target_weight">Lengo La Uzito</string>
     <string name="continue_on">Endelea Mbele</string>
     <string name="male">Mwanaume</string>
     <string name="female">Mwanamke</string>
-    <string name="height">Urefu</string>
+    <string name="height">Urefu katika meter</string>
     <string name="date_of_birth">Siku Ya Kuzaliwa</string>
     <string name="preferred_workout">Pahali Pema pa kufanyia kazi</string>
     <string name="edit">kuangalia</string>

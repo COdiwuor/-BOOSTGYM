@@ -18,11 +18,11 @@
     <string name="preferred_workout_location">Bevorzugter Trainingsort</string>
     <string name="age">Alter</string>
     <string name="gender">Geschlecht</string>
-    <string name="weight">Gewitch</string>
+    <string name="weight">Gewitch in Kgs</string>
     <string name="target_weight">Zeilgewicht</string>
     <string name="continue_on">Mach weiter</string>
     <string name="male">Mannlich</string>
-    <string name="height">Hohe</string>
+    <string name="height">Hohe im Meterns</string>
     <string name="date_of_birth">Geburtsdatum</string>
     <string name="edit">bearbeiten</string>
     <string name="username">Nutzername</string>
