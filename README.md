@@ -1,2 +1,2 @@
 # BOOSTGYM
-A protype gym App in development
+A prototype gym App in development
