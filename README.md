@@ -1,2 +1,2 @@
-# 094673-BOOSTGYM
-A gym App
+#BOOSTGYM
+A protype gym App in development
